@@ -50,24 +50,13 @@ Now that we have finished deduplication our data requires some preprocessing bef
 Hence in the Preprocessing phase we do the following in the order below:-
 
 
-1. Id
-2. ProductId - unique identifier for the product
-3. UserId - unqiue identifier for the user
-4. ProfileName
-5. HelpfulnessNumerator - number of users who found the review helpful
-6. HelpfulnessDenominator - number of users who indicated whether they found the review helpful or not
-7. Score - rating between 1 and 5
-8. Time - timestamp for the review
-9. Summary - brief summary of the review
-10. Text - text of the review
-11. 
-12.Begin by removing the html tags
-13.Remove any punctuations or limited set of special characters like , or . or # etc.
-14.Check if the word is made up of english letters and is not alpha-numeric
-15.Check to see if the length of the word is greater than 2 (as it was researched that there is no adjective in 2-letters)
-16.Convert the word to lowercase
-17.Remove Stopwords
-18.Finally Snowball Stemming the word (it was obsereved to be better than Porter Stemming)
+1. Begin by removing the html tags
+2. Remove any punctuations or limited set of special characters like , or . or # etc.
+3. Check if the word is made up of english letters and is not alpha-numeric
+4. Check to see if the length of the word is greater than 2 (as it was researched that there is no adjective in 2-letters)
+5. Convert the word to lowercase
+6. Remove Stopwords
+7. Finally Snowball Stemming the word (it was obsereved to be better than Porter Stemming)
 
 After which we collect the words used to describe positive and negative reviews
 
