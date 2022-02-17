@@ -49,7 +49,7 @@ Now that we have finished deduplication our data requires some preprocessing bef
 
 Hence in the Preprocessing phase we do the following in the order below:-
 
-1.Begin by removing the html tags
+1.Begin by removing the html tags<\n>
 2.Remove any punctuations or limited set of special characters like , or . or # etc.
 3.Check if the word is made up of english letters and is not alpha-numeric
 4.Check to see if the length of the word is greater than 2 (as it was researched that there is no adjective in 2-letters)
